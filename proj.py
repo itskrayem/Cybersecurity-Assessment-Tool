@@ -103,7 +103,7 @@ links=get_links(url)
 # hunter
 def get_emails(domain):
     url = 'https://api.hunter.io/v2/domain-search'
-    params = {'domain': domain, 'api_key': 'c180ff5229f243e6be0a76ab900cefe1ba36113f'}
+    params = {'domain': domain, 'api_key': 'enter your api key'}
     response = requests.get(url, params=params)
     if response.status_code == 200:
         data = response.json()
@@ -144,7 +144,7 @@ def shodan(domain):
             return None
 
     # Shodan API key
-    api_key = "uVv1yDI0pXms2coWyGtsX3cInBkCJtkS"
+    api_key = "enter your api key"
 
     # hostname you want to search for
     hostname = domain
